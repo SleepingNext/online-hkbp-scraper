@@ -1,4 +1,4 @@
 const insertBooks = require("./insertBooks");
-const insertChapters = require("./insertChapters");
+const scrapChaptersAndVerses = require("./scrapChaptersAndVerses");
 
-module.exports = {insertBooks, insertChapters};
+module.exports = {insertBooks, scrapChaptersAndVerses};
