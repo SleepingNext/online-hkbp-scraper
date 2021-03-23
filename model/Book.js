@@ -8,4 +8,10 @@ const BookSchema = new mongoose.Schema(
     },
 );
 
-module.exports = mongoose.model("BookModel", BookSchema, "Book")
+BookSchema.index({
+    name: 1, shortName: 1,
+}, {
+    unique: true,
+});
+
+module.exports = mongoose.model("BookModel", BookSchema, "Book");
